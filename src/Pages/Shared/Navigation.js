@@ -30,6 +30,8 @@ const Navigation = () => {
           <li><Link to="/add-product">Add a Product</Link></li>
           <li><Link to="/make-admin">Make Admin</Link></li>
           <li><Link to="/manage-product">Manage Product</Link></li>
+          <li><Link to="/sign-in">Sign In</Link></li>
+          <li><Link to="/sign-up">Sign Up</Link></li>
         </ul>
       </div>
       <div className="navbar-end">

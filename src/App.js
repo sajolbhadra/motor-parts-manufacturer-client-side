@@ -11,6 +11,9 @@ import ManageOrder from './Pages/ManageOrder/ManageOrder';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import MakeAdmin from './Pages/MakeAdmin/MakeAdmin';
 import ManageProduct from './Pages/ManageProduct/ManageProduct';
+import SignUp from './Pages/Authentication/SignUp';
+import SignIn from './Pages/Authentication/SignIn';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
         <Route path="/add-product" element={<AddProduct></AddProduct>}></Route>
         <Route path="/make-admin" element={<MakeAdmin></MakeAdmin>}></Route>
         <Route path="/manage-product" element={<ManageProduct></ManageProduct>}></Route>
+        <Route path="/sign-in" element={<SignIn></SignIn>}></Route>
+        <Route path="/sign-up" element={<SignUp></SignUp>}></Route>
+        <Route path="/*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
