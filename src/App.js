@@ -14,6 +14,7 @@ import ManageProduct from './Pages/ManageProduct/ManageProduct';
 import SignUp from './Pages/Authentication/SignUp';
 import SignIn from './Pages/Authentication/SignIn';
 import NotFound from './Pages/NotFound/NotFound';
+import RequireAuth from './Pages/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -22,7 +23,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/my-order" element={<MyOrder></MyOrder>}></Route>
+        <Route path="/my-order" element={
+          <RequireAuth>
+            <MyOrder></MyOrder>
+          </RequireAuth>
+        }></Route>
         <Route path="/add-review" element={<AddReview></AddReview>}></Route>
         <Route path="/my-profile" element={<MyProfile></MyProfile>}></Route>
         <Route path="/manage-order" element={<ManageOrder></ManageOrder>}></Route>

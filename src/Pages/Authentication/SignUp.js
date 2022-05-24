@@ -32,9 +32,7 @@ const SignUp = () => {
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password)
         await updateProfile({ displayName: data.name});
-        console.log(data);
-        console.log(user);
-        console.log('update done');
+        // console.log('update done', data);
         navigate('/');
     }
 
@@ -58,7 +56,7 @@ const SignUp = () => {
                                 })}
                                     type="text" placeholder="Enter Name" className="input input-bordered w-full max-w-xs" />
                                 <label className="label">
-                                    {errors?.name === "required" && <span className="label-text-alt text-red-800">{error?.name?.message}</span>}
+                                    {errors?.name?.type === "required" && <span className="label-text-alt text-red-800">{error?.name?.message}</span>}
                                 </label>
                             </div>
 
