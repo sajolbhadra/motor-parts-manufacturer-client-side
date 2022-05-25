@@ -30,7 +30,7 @@ const Navigation = () => {
             <li><a>Manage Product</a></li>
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">Electrical Works</Link>
+        <Link to="/" className="btn btn-ghost normal-case text-xl">Motor Parts Manufacturer</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
@@ -44,6 +44,7 @@ const Navigation = () => {
           <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/about">About US</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
           <p>{user?.displayName}</p>
         </ul>
       </div>
