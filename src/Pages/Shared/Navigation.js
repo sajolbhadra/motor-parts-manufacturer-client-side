@@ -41,6 +41,9 @@ const Navigation = () => {
           <li><Link to="/add-product">Add a Product</Link></li>
           <li><Link to="/make-admin">Make Admin</Link></li>
           <li><Link to="/manage-product">Manage Product</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/about">About US</Link></li>
           <p>{user?.displayName}</p>
         </ul>
       </div>
