@@ -11,46 +11,39 @@ const AddProduct = () => {
         const quantity = event.target.quantity.value;
         const supplierName = event.target.supplierName.value;
 
-        const item = {name, img, description, price, quantity, supplierName}
+        const item = { name, img, description, price, quantity, supplierName }
 
         //send data to server
         fetch('http://localhost:5000/item', {
-            method:'POST',
+            method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
             body: JSON.stringify(item)
         })
-        .then(res => res.json())
-        .then(data => {
-            console.log('success', data)
-            alert('Items Added Successfuly');
-            event.target.reset()
-        })
+            .then(res => res.json())
+            .then(data => {
+                console.log('success', data)
+                alert('Items Added Successfuly');
+                event.target.reset()
+            })
     }
     return (
         <div>
-            <h2>Add Product</h2>
-
-
             <div>
-            <h1  className='text-center bg-primary text-light py-2 '>Add to Inventory</h1>
-            <h1 className='text-center my-5'>Fill Data</h1>
-            <form onSubmit={handleAddItem} className="text-center my-5">
+                <h1 className='text-center bg-primary text-light py-2 '>Add to Inventory</h1>
+                <h1 className='text-center my-5'>Fill Data</h1>
+                <form onSubmit={handleAddItem} className="text-center my-5">
 
-                <input type="text" className='w-50 my-1 px-3 py-1 border rounded-pill text-primary' name="name" placeholder='name' required /> <br />
-                <input type="text" className='w-50 my-1 px-3 py-1 border rounded-pill text-primary' name="img" placeholder='image url' required /> <br />
-                <input type="text" className='w-50 my-1 px-3 py-1 border rounded-pill text-primary' name="description" placeholder='description' required /> <br />
-                <input type="text" className='w-50 my-1 px-3 py-1 border rounded-pill text-primary' name="price" placeholder='price' required /> <br />
-                <input type="text" className='w-50 my-1 px-3 py-1 border rounded-pill text-primary' name="quantity" placeholder='quantity' required /> <br />
-                <input type="text" className='w-50 my-1 px-3 py-1 border rounded-pill text-primary' name="supplierName" placeholder='supplier Name' required /> <br />
-                <input type="submit" className='my-2' value="Submit" />
-            </form>
-
-            <div className='text-center my-5 ' >
-                <Link to='/manage-inventory' className='btn btn-primary' >Manage Inventory</Link>
+                    <input type="text" className='w-50 my-1 px-3 py-1 border rounded-pill text-primary' name="name" placeholder='name' required /> <br />
+                    <input type="text" className='w-50 my-1 px-3 py-1 border rounded-pill text-primary' name="img" placeholder='image url' required /> <br />
+                    <input type="text" className='w-50 my-1 px-3 py-1 border rounded-pill text-primary' name="description" placeholder='description' required /> <br />
+                    <input type="text" className='w-50 my-1 px-3 py-1 border rounded-pill text-primary' name="price" placeholder='price' required /> <br />
+                    <input type="text" className='w-50 my-1 px-3 py-1 border rounded-pill text-primary' name="quantity" placeholder='quantity' required /> <br />
+                    <input type="text" className='w-50 my-1 px-3 py-1 border rounded-pill text-primary' name="supplierName" placeholder='supplier Name' required /> <br />
+                    <input type="submit" className='my-2 btn ' value="Submit" />
+                </form>
             </div>
-        </div>
         </div>
     );
 };
