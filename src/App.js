@@ -21,6 +21,7 @@ import Portfolio from './Pages/Public/Portfolio';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrder from './Pages/Dashboard/MyOrder';
 import MyReview from './Pages/Dashboard/MyReview';
+import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -50,6 +51,11 @@ function App() {
           <Route path="/dashboard/manage-product" element={<ManageProduct></ManageProduct>}></Route>
         </Route>
 
+        <Route path="/order/:id" element={
+          <RequireAuth>
+            <PlaceOrder></PlaceOrder>
+          </RequireAuth>
+        }></Route>
         <Route path="/add-review" element={<AddReview></AddReview>}></Route>
         <Route path="/my-profile" element={<MyProfile></MyProfile>}></Route>
         <Route path="/manage-order" element={<ManageOrder></ManageOrder>}></Route>

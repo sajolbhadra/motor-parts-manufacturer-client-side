@@ -7,7 +7,7 @@ const useReviews = () => {
             .then(res => res.json())
             .then(data => setReviews(data))
 
-    }, [setReviews])
+    }, [setReviews]);
     return ([reviews, setReviews]
     );
 };

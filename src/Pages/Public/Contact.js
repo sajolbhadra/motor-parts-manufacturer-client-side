@@ -2,8 +2,8 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div>
-            <h2>Contact</h2>
+        <div className='flex justify-center my-4 mb-24'>
+            <h2 className='text-3xl font-bold'>Contact</h2>
         </div>
     );
 };
