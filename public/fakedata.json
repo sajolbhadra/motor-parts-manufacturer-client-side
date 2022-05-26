@@ -1,0 +1,50 @@
+[
+    {
+        "name":"Engine Valve",
+        "img":"https://5.imimg.com/data5/LV/DU/MY-11959742/engine-valve-500x500.jpg",
+        "description": "The valves are installed in a part of the engine called the head and are responsible for letting air and/or fuel into the cylinders to be combusted -- those are called intake valves -- and for letting the exhaust from that combustion out of the cylinders -- those are called exhaust valves.",
+        "price": 750,
+        "quantity": 8,
+        "supplierName": "Toyota"
+    },
+    {
+        "name":"V12 Engine",
+        "img":"https://www.researchgate.net/publication/334568325/figure/fig2/AS:782383666188290@1563546210876/V12-engine-12-cylinders-are-arranged-in-two-banks-of-six-cylinders-set-at-an-angle-to.jpg",
+        "description": "An engine control system is responsible for controlling the combustion parameters of an internal combustion engine to increase the efficiency of the engine. An optimized parameter setting of an engine control system is highly influenced by the engine load.",
+        "price": 45000,
+        "quantity": 7,
+        "supplierName": "Arrow.com"
+    },
+    {
+        "name":"Anti Lock Braking System",
+        "img":"https://www.zf.com/products/media/en/pim/t___commercial_vehicle_technology/active_safety/W-mBSP-TRUCK-optimized-WNA_jpg_3_2_748px.png",
+        "description": "An anti-lock braking system is a safety anti-skid braking system used on aircraft and on land vehicles, such as cars, motorcycles, trucks, and buses.",
+        "price": 5000,
+        "quantity": 70,
+        "supplierName": "ZF"
+    },
+    {
+        "name":"Fuel Cap",
+        "img":"https://www.rallynuts.com/user/products/large/CAP2SF_lge.jpg",
+        "description": "A fuel cap prevents fuel contamination and protects the fuel tank. If outside contaminants get into the fuel tank, this may cause clogging of the fuel filter, fuel lines, fuel injectors, or the fuel pump itself. This will ultimately prevent the vehicle's engine from working",
+        "price": 700,
+        "quantity": 12,
+        "supplierName": "LuaNode"
+    },
+    {
+        "name":"Door Handle For Car",
+        "img":"https://thumbs.dreamstime.com/b/close-up-interior-car-door-handle-detail-shot-inside-37956062.jpg",
+        "description": "New car door handles can upgrade the appearance of your vehicle, replace damaged factory handles, and make it easier for individuals who have mobility challenges to get in and out of the car.",
+        "price": 45000,
+        "quantity": 11,
+        "supplierName": "Arana Corp"
+    },
+    {
+        "name":"Car Clutch",
+        "img":"https://i0.wp.com/studentlesson.com/wp-content/uploads/2020/06/car-clutch-plate.jpg?fit=1140%2C550&ssl=1",
+        "description": "A car has an engine to power it, but not everyone is familiar with a clutch or how it works. This mechanism both engages and disengages your power transmission from the driving shaft to the driven shaft.",
+        "price": 750,
+        "quantity": 120,
+        "supplierName": "Exar Corporation"
+    }
+]
