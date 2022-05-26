@@ -10,7 +10,7 @@ const ManageProduct = () => {
     const handleDeleteItems = (id) => {
         const action = window.confirm('Want to Delete This items? Ok To proceed');
         if(action){
-            const url = `http://localhost:5000/item/${id}`;
+            const url = `https://stark-bastion-06570.herokuapp.com/item/${id}`;
             fetch(url , {
                 method: 'DELETE'
             })

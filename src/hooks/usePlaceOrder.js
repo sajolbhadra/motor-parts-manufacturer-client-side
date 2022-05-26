@@ -5,7 +5,7 @@ const usePlaceOrder = () => {
     const {id} = useParams();
     const [order, setOrder] = useState({});
     useEffect( () => {
-        fetch (`http://localhost:5000/item/${id}`)
+        fetch (`https://stark-bastion-06570.herokuapp.com/item/${id}`)
         .then(res => res.json())
         .then(data => setOrder(data))
     }, [setOrder] )

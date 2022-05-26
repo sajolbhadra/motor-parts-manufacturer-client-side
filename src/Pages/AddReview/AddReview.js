@@ -10,7 +10,7 @@ const AddReview = () => {
         const reviews = { name, rating, review }
         console.log(reviews)
         //send data to server
-        fetch('http://localhost:5000/review', {
+        fetch('https://stark-bastion-06570.herokuapp.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

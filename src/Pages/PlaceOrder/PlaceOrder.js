@@ -12,7 +12,7 @@ const PlaceOrder = () => {
         const quantity = event.target.updateQuantity.value;
         const item = { quantity }
         //send data to server
-        const url = `http://localhost:5000/item/${id}`;
+        const url = `hhttps://stark-bastion-06570.herokuapp.com/item/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
